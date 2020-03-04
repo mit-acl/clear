@@ -5,20 +5,20 @@ The Matlab, Python, and C++ implementation of the CLEAR algorithm, as described 
 [1] K. Fathian, K. Khosoussi, Y. Tian, P. Lusk, J.P. How, "CLEAR: A Consistent Lifting, Embedding, and Alignment Rectification Algorithm for Multi-View Data Association", [arXiv:1902.02256](https://arxiv.org/abs/1902.02256), 2019.
 
 
-### Syntax:
+### Matlab syntax:
 ```
-Pout = CLEAR(Pin, numSmp, numAgt)
+[Pout, Puni, numObjEst] = CLEAR(Pin, numSmp, numAgt)
 ```
 
 ### Description:
-``Pout = CLEAR(Pin, numSmp, numAgt)`` applies the CLEAR algorithm on the aggregate association matrix ``Pin`` and returns the cycle consistent association matrix ``Pout``. Variable ``numAgt`` is the number of views or agents, and ``numSmp`` is a vector that contains the number of observations at each view.  
+``[Pout, Puni, numObjEst] = CLEAR(Pin, numSmp, numAgt)`` applies the CLEAR algorithm on the aggregate association matrix ``Pin`` and returns the cycle consistent association matrix ``Pout``. Variable ``numAgt`` is the number of views or agents, and ``numSmp`` is a vector that contains the number of observations at each view. CLEAR further returns lifting associations to universe ``Puni`` and the estimated size of universe ``numObjEst``.  
 
 
 ### Example:
 Run "Example.m" for a simple example that shows how the CLEAR algorithm is called.
 
 
-### Options & Tips: 
+### Options and tips: 
 If the number of objects is known, call the algorithm with the option
 ```
 Pout = CLEAR(Pin, numSmp, numAgt, 'numobj', numObj)
@@ -26,11 +26,11 @@ Pout = CLEAR(Pin, numSmp, numAgt, 'numobj', numObj)
 where ``numObj`` is the number of objects. Otherwise, the algorithm automatically estimates the number of objects from the spectrum of the normalized Laplacian matrix.
 
 
-## Synthetic comparisons
+## Synthetic comparisons:
 Run files in the "SyntheticComparison" folder to compare CLEAR with state-of-the-art algorithms.
 
 
-## .
+## Copyright:
 
 If this program is useful, please consider citing [[1]](https://arxiv.org/abs/1902.02256). This package is tested in Matlab 2018a - 2019a, 64-bit Windows 10 OS. We noted that using an older version of Matlab may cause an error due to the incompatibility of some functions.
 
