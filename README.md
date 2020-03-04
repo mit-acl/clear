@@ -7,7 +7,7 @@ The Matlab, Python, and C++ implementation of the CLEAR algorithm, as described 
 ## Video:
 A video summary of the CLEAR algorithm: 
 
-![CLEAR](/Images/CLEARvid.jpg)](https://youtu.be/RBxq9KYcgTY "CLEAR Algorithm for Multi-View Data Association")
+[![CLEAR](/Images/CLEARvid.jpg)](https://youtu.be/RBxq9KYcgTY "CLEAR Algorithm for Multi-View Data Association")
 
 
 ## Matlab syntax:
