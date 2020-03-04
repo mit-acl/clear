@@ -4,8 +4,11 @@ The Matlab, Python, and C++ implementation of the CLEAR algorithm, as described 
 
 [1] K. Fathian, K. Khosoussi, Y. Tian, P. Lusk, J.P. How, "CLEAR: A Consistent Lifting, Embedding, and Alignment Rectification Algorithm for Multi-View Data Association", [arXiv:1902.02256](https://arxiv.org/abs/1902.02256), 2019.
 
+## Video:
+A video describing the CLEAR algorithm is available at
 
-### Matlab syntax:
+
+## Matlab syntax:
 ```
 [Pout, Puni, numObjEst] = CLEAR(Pin, numSmp, numAgt)
 ```
@@ -27,7 +30,7 @@ where ``numObj`` is the number of objects. Otherwise, the algorithm automaticall
 
 
 ## Synthetic comparisons:
-Run files in the "SyntheticComparison" folder to compare CLEAR with state-of-the-art algorithms.
+Run files in the "Synthetic_Comparisons" folder to compare CLEAR with state-of-the-art algorithms.
 
 
 ## Copyright:
