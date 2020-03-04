@@ -116,7 +116,6 @@ def block_svd(A, Lnrm):
     srtIdx = np.argsort(sv, axis=0)[::-1].reshape((-1,))
     
     sl, Vl = sv[srtIdx, :], V[:, srtIdx]
-    # print(Vl[:, -2:])
     return sl, Vl
 
 #--------------------------------------------------------------------------

@@ -1,5 +1,4 @@
 import numpy as np
-from scipy.sparse import csgraph
 import util
 
 def CLEAR(TT, numSmp, numAgt, numObj=None):
@@ -80,20 +79,4 @@ def CLEAR(TT, numSmp, numAgt, numObj=None):
     # Pairwise assignments
     XX = np.matmul(X, X.T)
     
-    return XX
-
-f = open("in.txt", "r")
-t = [int(x) for x in f.read().strip().split(' ')]
-f.close()
-Pin = np.array(t).reshape((65,65)).T
-numSmp = [6,8,10,8,6,5,5,5,8,4]
-numAgt = len(numSmp)
-
-Pout = CLEAR(Pin,numSmp,numAgt)
-
-f = open("out.txt", "r")
-t = [int(x) for x in f.read().strip().split(' ')]
-f.close()
-Exp = np.array(t).reshape((65,65)).T
-
-print(np.sum(Pout != Exp))
+    return XX, X, numObj
