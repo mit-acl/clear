@@ -1,11 +1,12 @@
 # CLEAR: Consistent Lifting, Embedding, and Alignment Rectification Algorithm
 
-The Matlab, Python, and C++ implementation of the CLEAR algorithm, as described in [[1]](https://arxiv.org/abs/1902.02256), is provided.
+The Matlab, Python, and C++ implementation of the CLEAR algorithm, as described in [[1]](https://arxiv.org/abs/1902.02256).
 
 [1] K. Fathian, K. Khosoussi, Y. Tian, P. Lusk, J.P. How, "CLEAR: A Consistent Lifting, Embedding, and Alignment Rectification Algorithm for Multi-View Data Association", [arXiv:1902.02256](https://arxiv.org/abs/1902.02256), 2019.
 
 ## Video:
-A video describing the CLEAR algorithm is available at
+A video describing the CLEAR algorithm is 
+![CLEAR](/Images/CLEARvid.jpg)](https://youtu.be/RBxq9KYcgTY "CLEAR Algorithm for Multi-View Data Association")
 
 
 ## Matlab syntax:
